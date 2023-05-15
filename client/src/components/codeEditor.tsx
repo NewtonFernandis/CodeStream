@@ -6,7 +6,7 @@ import { FiSun, FiMoon } from "react-icons/fi";
 import LanguageSelectDropDown from "./languageSelectDropDown";
 import "./codeEditor.css";
 const CodeEditor = () => {
-  const socket = useSocket("http://localhost:4000");
+  const socket = useSocket("https://code-stream-server.vercel.app");
   const { id } = useParams<{ id: string }>();
   const [code, setCode] = useState<string | undefined>("");
   const [language, setLanguage] = useState("JavaScript");
