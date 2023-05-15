@@ -1,0 +1,40 @@
+.toggler {
+  background-color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.toggler:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.toggler:focus {
+  outline: none;
+}
+
+.toggler.light {
+  color: #333;
+}
+
+.toggler.light:hover {
+  background-color: #f0f0f0;
+}
+
+.toggler.dark {
+  color: #fff;
+  background-color: #333;
+}
+
+.toggler.dark:hover {
+  background-color: #222;
+}
